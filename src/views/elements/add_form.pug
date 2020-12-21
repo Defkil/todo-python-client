@@ -1,0 +1,18 @@
+.row.main-container
+    .groups.col-1.d-none.d-sm-block
+    .todos.col-12.col-lg-10
+        .card
+            .card-body
+                form.form-todo-add.input-group
+                    input.input-todo-task.form-control(type='text' placeholder='Add Task')
+                    .input-group-text Priority:
+                    .input-group-append
+                        select.select-todo-priority.custom-select
+                            option(value=2) High
+                            option(value=1 selected=true) Normal
+                            option(value=0) Low
+                        button.add-btn.btn.btn-outline-secondary(type='submit' name="action")
+                            svg(width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                                path(fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
+                                path(fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z")
+            //- .card-footer add description

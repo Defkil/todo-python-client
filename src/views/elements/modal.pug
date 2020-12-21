@@ -1,0 +1,13 @@
+.modal(tabindex='-1' role='dialog' aria-hidden="true" class=modalClass)
+    .modal-dialog(role='document')
+        .modal-content
+            .modal-header
+                h5.modal-title
+                    block modal-title
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                block modal-body
+            .modal-footer
+                block modal-footer
+                button.btn.btn-secondary(type='button' data-dismiss='modal') Close

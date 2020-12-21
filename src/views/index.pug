@@ -1,0 +1,15 @@
+extends ./elements/layout
+block body
+    include ./elements/navbar
+    main
+        include ./elements/add_form
+        .row
+            .groups.col-1
+            .todo-list.col-10
+
+    //- modalClass variable is used in ./elements/navbar.pug for indicating the modal
+    - let modalClass = 'modal-auth';
+    include ./modals/auth
+
+    - modalClass = 'modal-settings';
+    include ./modals/settings
